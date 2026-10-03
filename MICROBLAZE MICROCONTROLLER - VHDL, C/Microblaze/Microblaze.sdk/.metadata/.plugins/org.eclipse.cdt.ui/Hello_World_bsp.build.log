@@ -1,6 +1,0 @@
-17:06:35 **** Auto Build of project Hello_World_bsp ****
-make -k all 
-make: *** No rule to make target `all'.
-
-17:06:36 Build Finished (took 216ms)
-

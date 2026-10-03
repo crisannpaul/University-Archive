@@ -1,5 +1,0 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work resurse -2002  $dsn/src/Reciever.vhd
-acom -O3 -e 100 -work resurse -2002  $dsn/src/Reciever.vhd
-acom -O3 -e 100 -work resurse -2002  $dsn/src/Freq_divider.vhd $dsn/src/Reciever.vhd $dsn/src/Display.vhd $dsn/src/Big_thing.vhd $dsn/src/test.vhd $dsn/src/TestBench/big_thing_TB.vhd

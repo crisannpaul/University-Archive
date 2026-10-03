@@ -14,7 +14,7 @@ public class Main {
 	public static JDABuilder jda; // java discord app
 	
 	public static void main(String[] args) throws LoginException{
-		JDABuilder jdaBuilder = JDABuilder.createDefault("OTMzNDAyNTAzODg4ODk2MDIw.YehA0g.c_kJQ9XKrlLshoiMXD4avcy8zAA").setActivity(Activity.listening("your screams"));
+		JDABuilder jdaBuilder = JDABuilder.createDefault(System.getenv("DISCORD_TOKEN")).setActivity(Activity.listening("your screams"));
 		jdaBuilder.addEventListeners(new PeekaBoo());
 		JDA jda = null;
 		try {
