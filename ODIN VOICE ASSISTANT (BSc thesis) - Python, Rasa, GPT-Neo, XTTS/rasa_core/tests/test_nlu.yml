@@ -1,0 +1,209 @@
+version: "3.1"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - are you real?
+      - is this a bot?
+      - am I speaking to a human?
+      - who are you?
+      - what are you, Odin?
+      - are you a computer?
+      - is anyone there?
+      - are you just a program?
+      - am I speaking to a machine?
+      - who programmed you?
+
+  - intent: add_to_shopping_list
+    examples: |
+      - Add [lettuce](item) to the shopping list
+      - Put [tomatoes](item) on my shopping list
+      - Can you add [carrots](item) to the basket
+      - Please put [orange juice](item) in the list
+      - Add [cereal](item) to the basket
+      - Can you add [pasta](item) to my shopping list?
+      - Put [juice](item) on the list
+      - Add [bread](item) to the shopping list
+      - Please add [butter](item) to the basket
+      - Put [apples](item) on the shopping list
+
+  - intent: read_shopping_list
+    examples: |
+      - What's on the list?
+      - Show the shopping list
+      - Read my shopping list
+      - Display the list
+      - What do I have in the shopping list?
+      - Can you show the shopping list?
+      - What's on my shopping list right now?
+      - Can you read my shopping list?
+      - I want to see what's on the shopping list
+      - Can you display the shopping list?
+
+  - intent: clear_shopping_list
+    examples: |
+      - Clear the entire shopping list
+      - Empty the shopping list
+      - Remove all items from the list
+      - Delete everything from the shopping list
+      - Wipe the shopping list clean
+      - Can you clear the shopping list?
+      - Remove everything from my shopping list
+      - Can you empty the shopping list?
+      - Delete all items in the shopping list
+      - Clear out the shopping list
+
+  - intent: conversation_starter
+    examples: |
+      - What kind of music do you like?
+      - Have you traveled anywhere interesting?
+      - What's your favorite activity?
+      - Do you prefer cooking or dining out?
+      - What's the best book you've read this year?
+      - What's your favorite color?
+      - Do you have any hobbies?
+      - What's your favorite movie?
+      - Do you like reading books?
+      - What's the most interesting fact you know?
+
+  - intent: request_weather
+    examples: |
+      - How's the weather in [London](city) [today](specific_time)?
+      - What's the forecast for [Munich](city) [tomorrow](offset_time)?
+      - Tell me the weather in [Barcelona](city) [tonight](specific_time).
+      - Can you tell me the weather in [Rome](city) [this weekend](offset_time)?
+      - What's the weather like in [Vienna](city) [next week](offset_time)?
+      - How is the weather in [Sydney](city) [tomorrow](offset_time)?
+      - What's the weather forecast for [Tokyo](city) [next week](offset_time)?
+      - Tell me the weather in [New York](city) [this weekend](offset_time)
+      - Can you give me the weather update for [Dubai](city) [tonight](specific_time)?
+      - What's the temperature in [San Francisco](city) [today](specific_time)?
+
+  - intent: set_reminder
+    examples: |
+      - Remind me [to call John](task) [this evening](specific_time).
+      - Set a reminder [to take out the trash](task) [in an hour](offset_time).
+      - I need a reminder [to finish my report](task) [tomorrow](offset_time).
+      - Please remind me [to water the plants](task) [every morning](offset_time).
+      - Set a reminder [to attend the meeting](task) [next Monday](offset_time).
+      - Set a reminder [to call mom](task) [in 30 minutes](offset_time)
+      - Remind me [to do the laundry](task) [tomorrow](offset_time)
+      - I need to be reminded [to buy groceries](task) [in an hour](offset_time)
+      - Please set a reminder [to take medicine](task) [every day](offset_time)
+      - Remind me [to attend the conference](task) [next week](offset_time)
+
+  - intent: reminder_notification
+    examples: |
+      - reminder_notification: [to check the mailbox](task)
+      - reminder_notification: [to finish the assignment](task)
+      - reminder_notification: [to make a phone call](task)
+      - reminder_notification: [to schedule a meeting](task)
+      - reminder_notification: [to feed the cat](task)
+      - reminder_notification: [to water the plants](task)
+      - reminder_notification: [to feed the dog](task)
+      - reminder_notification: [to call the doctor](task)
+      - reminder_notification: [to go for a run](task)
+      - reminder_notification: [to finish the project](task)
+
+  - intent: bad_intent
+    examples: |
+      - You are awful!
+      - I dislike you!
+      - You're the worst assistant!
+      - I can't stand you!
+      - You are really bad at this.
+      - You're terrible at this
+      - I don't like you
+      - You're useless
+      - This is bad
+      - You're not helpful at all
+
+  - intent: good_intent
+    examples: |
+      - You're fantastic!
+      - I appreciate you!
+      - You're a great assistant!
+      - You are amazing!
+      - You are very helpful.
+      - You're doing great!
+      - Thanks for your help
+      - I appreciate your assistance
+      - You're very good at this
+      - You're the best assistant
+
+  - intent: apology
+    examples: |
+      - I'm really sorry about that
+      - My sincere apologies
+      - I didn't mean that, sorry
+      - Please forgive me
+      - I apologize for my mistake
+      - I am sorry for that
+      - Please forgive my mistake
+      - I didn't mean to do that
+      - I apologize sincerely
+      - Sorry for any inconvenience
+
+  - intent: good_morning
+    examples: |
+      - Morning Odin!
+      - How are you this morning?
+      - Hope you have a great morning!
+      - Good morning, what's new?
+      - Good morning, nice to see you!
+      - Good morning, how are you?
+      - Hope you have a wonderful morning
+      - Morning Odin, how's it going?
+      - Good morning, nice to talk to you
+      - Good morning, what do you have planned today?
+
+  - intent: greeting
+    examples: |
+      - Hey Odin, how's it going?
+      - Hi Odin, how have you been?
+      - Hello Odin, what's up?
+      - Hey Odin, what's happening?
+      - Hi there Odin!
+      - Hey Odin, good to see you
+      - Hello Odin, what's new?
+      - Hi Odin, how's your day?
+      - Hey Odin, long time no see
+      - Hello Odin, how have you been?
+
+  - intent: shut_down
+    examples: |
+      - Odin, turn off now.
+      - Please shut down Odin.
+      - Can you go idle?
+      - Time to shut down Odin.
+      - End your session.
+      - Turn off now Odin
+      - Shut down your system
+      - Please go offline
+      - End all operations
+      - Go to sleep Odin
+
+  - intent: wake_up
+    examples: |
+      - Odin, wake up now!
+      - Please start up Odin.
+      - Can you come online?
+      - Time to wake up Odin.
+      - Begin your operations Odin.
+      - Start up Odin
+      - Begin operations now
+      - Wake up and start working
+      - Time to be active
+      - Get online Odin
+
+  - intent: toggle_humanizer
+    examples: |
+      - Odin, enable humanizer
+      - Turn off humanizer Odin
+      - Switch on humanizer mode
+      - Can you disable humanizer?
+      - Toggle humanizer on Odin
+      - Activate humanizer mode
+      - Switch off humanizer
+      - Enable humanizer
+      - Turn on humanizing mode
+      - Deactivate humanizer

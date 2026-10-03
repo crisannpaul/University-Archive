@@ -1,0 +1,10 @@
+%[read_shopping_list]('training': '7')
+    What's on my ~[list]
+    Can you read the ~[list]
+    Show me what's in the ~[list]
+    I want to see my ~[list]
+    Read out the ~[list]
+
+~[list]
+    shopping list
+    list

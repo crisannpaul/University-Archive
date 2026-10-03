@@ -1,0 +1,42 @@
+/* chat.css */
+
+.chat-window {
+    border: black;
+}
+
+.chat-header {
+    align-content: center;
+}
+
+.message-list {
+    /* Your styles for message list */
+}
+
+.message-item {
+    /* Common styles for all messages */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    max-width: 80%;
+}
+
+.message-own {
+    /* Styles for own messages */
+    background-color: #90ee90; /* Light green */
+    margin-left: auto; /* Align to the right */
+    text-align: right;
+}
+
+.message-other {
+    /* Styles for other messages */
+    background-color: #ffcccb; /* Light red */
+    margin-right: auto; /* Align to the left */
+    text-align: left;
+}
+
+
+.chat-input {
+    text-align: left
+}
+
+/* Add other styles as needed */

@@ -1,0 +1,286 @@
+[
+  {
+    "text": "Can you add carrots to the basket",
+    "entities": [
+      {
+        "start": 12,
+        "end": 19,
+        "value": "carrots",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's on my shopping list right now?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "specific_time",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.9777162671089172,
+        "value": "right now",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you tell me the weather in Rome this weekend?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 35,
+        "value": "Rome",
+        "entity": "city"
+      },
+      {
+        "start": 36,
+        "end": 48,
+        "value": "this weekend",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's the weather like in Vienna next week?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "Vienna",
+        "entity": "city"
+      },
+      {
+        "start": 34,
+        "end": 43,
+        "value": "next week",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offset_time",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.4961757957935333,
+        "value": "next week",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How is the weather in Sydney tomorrow?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "Sydney",
+        "entity": "city"
+      },
+      {
+        "start": 29,
+        "end": 37,
+        "value": "tomorrow",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offset_time",
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.994063675403595,
+        "value": "tomorrow",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What's the weather forecast for Tokyo next week?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 37,
+        "value": "Tokyo",
+        "entity": "city"
+      },
+      {
+        "start": 38,
+        "end": 47,
+        "value": "next week",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "offset_time",
+        "start": 38,
+        "end": 47,
+        "confidence_entity": 0.6063750386238098,
+        "value": "next week",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tell me the weather in New York this weekend",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "New York",
+        "entity": "city"
+      },
+      {
+        "start": 32,
+        "end": 44,
+        "value": "this weekend",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9758943319320679,
+        "value": "New York",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you give me the weather update for Dubai tonight?",
+    "entities": [
+      {
+        "start": 39,
+        "end": 44,
+        "value": "Dubai",
+        "entity": "city"
+      },
+      {
+        "start": 45,
+        "end": 52,
+        "value": "tonight",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specific_time",
+        "start": 45,
+        "end": 52,
+        "confidence_entity": 0.999467670917511,
+        "value": "tonight",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What's the temperature in San Francisco today?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 39,
+        "value": "San Francisco",
+        "entity": "city"
+      },
+      {
+        "start": 40,
+        "end": 45,
+        "value": "today",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 30,
+        "end": 39,
+        "confidence_entity": 0.9183728694915771,
+        "value": "Francisco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "specific_time",
+        "start": 40,
+        "end": 45,
+        "confidence_entity": 0.9968168139457703,
+        "value": "today",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Please remind me to water the plants every morning.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 36,
+        "value": "to water the plants",
+        "entity": "task"
+      },
+      {
+        "start": 37,
+        "end": 50,
+        "value": "every morning",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "task",
+        "start": 17,
+        "end": 36,
+        "confidence_entity": 0.8839066028594971,
+        "value": "to water the plants",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "offset_time",
+        "start": 37,
+        "end": 42,
+        "confidence_entity": 0.9816307425498962,
+        "value": "every",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "specific_time",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.914956271648407,
+        "value": "morning",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

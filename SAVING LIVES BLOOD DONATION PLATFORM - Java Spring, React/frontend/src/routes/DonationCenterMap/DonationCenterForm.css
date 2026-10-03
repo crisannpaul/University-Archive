@@ -1,0 +1,12 @@
+.donation-centers-map {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

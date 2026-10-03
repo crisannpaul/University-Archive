@@ -1,0 +1,74 @@
+.background-container-donation-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assetes/donationCalls.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+  }
+
+  .call-registration-form-container {
+    width: 300px;
+    height: 45vh;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; /* Align content to the top */
+  }
+  
+  
+  .call-registration-form-container h2 {
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form-group select {
+    height: 36px; /* Match the height of the button */
+  }
+  
+  .call-registration-form-container form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .call-registration-form-container form button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  

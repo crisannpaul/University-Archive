@@ -1,0 +1,9 @@
+%[joke]('training': '7')
+    tell me a ~[joke]
+    can you joke?
+    I want to hear a ~[joke]
+    give me a ~[joke]
+
+~[joke]
+    joke
+    funny story

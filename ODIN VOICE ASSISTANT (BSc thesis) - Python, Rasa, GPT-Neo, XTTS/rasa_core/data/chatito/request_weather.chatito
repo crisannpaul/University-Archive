@@ -1,0 +1,34 @@
+%[request_weather]('training': '20')
+    What's the weather like in [~[city]](city) [~[time]](time)?
+    Tell me the weather in [~[city]](city) for [~[time]](time)
+    What is the current weather in [~[city]](city) at [~[time]](time)?
+    How's the weather in [~[city]](city) [~[time]](time)?
+    Can I get the weather for [~[city]](city) [~[time]](time)?
+    Show me the weather in [~[city]](city) for [~[time]](time)
+    I need the weather forecast for [~[city]](city) [~[time]](time)
+    Is it going to rain in [~[city]](city) [~[time]](time)?
+    Will it be sunny in [~[city]](city) [~[time]](time)?
+    What are the weather conditions in [~[city]](city) at [~[time]](time)?
+
+~[city]
+    Paris
+    Cluj Napoca
+    Alba Iulia
+    Alba
+    New York
+    Tokyo
+    London
+    Sydney
+    Bucuresti
+    Berlin
+    Cluj
+
+~[time]
+    today
+    tomorrow
+    this evening
+    this weekend
+    next week
+    in two days
+    3:00
+    15:00

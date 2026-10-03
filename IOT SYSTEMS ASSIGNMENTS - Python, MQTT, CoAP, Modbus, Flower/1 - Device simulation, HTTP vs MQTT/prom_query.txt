@@ -1,0 +1,1 @@
+avg by (sensor) (consumer_last_value{protocol="mqtt"})

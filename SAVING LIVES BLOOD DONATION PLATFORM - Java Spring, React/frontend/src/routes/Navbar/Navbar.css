@@ -1,0 +1,75 @@
+.NavbarItems {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0, 0, 0);
+    width: auto; /* Changed to auto */
+    height: 5vh; /* Adjusted height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Added to stretch the navbar */
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+}
+
+.nav-links i {
+    padding-right: 10px;
+}
+
+.nav-links:hover {
+    transform: scale(1.2);
+    color: darkgray;
+}
+
+.menu-icons {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .NavbarItems {
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+        width: 7%;
+        position: fixed;
+        top: 150px;
+        left: 0;
+        z-index: 2;
+        border-radius: 10px;
+    }
+
+    .nav-menu {
+        align-items: flex-start;
+    }
+}

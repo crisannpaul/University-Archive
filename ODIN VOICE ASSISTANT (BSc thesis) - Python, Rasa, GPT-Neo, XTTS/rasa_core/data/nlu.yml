@@ -1,0 +1,311 @@
+version: "3.1"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you, Odin?
+  - intent: add_to_shopping_list
+    examples: |
+      - Put [milk](item) on my shopping list
+      - Can you add [eggs](item) to my shopping list?
+      - Add [bread](item) to the basket
+      - Please put [butter](item) in the shopping cart
+      - Put [cheese](item) on the list
+      - Add [apples](item) to my shopping list
+      - Can you add [chicken](item) to the shopping cart?
+      - Add [bananas](item) to my basket
+      - Please add [tomatoes](item) to the list
+      - Put [yogurt](item) on the shopping list
+      - Add [lettuce](item) to my cart
+      - Can you add [pasta](item) to the basket?
+      - Add [rice](item) to my shopping list
+      - Please put [orange juice](item) in the shopping cart
+      - Put [cereal](item) on the list
+  - intent: read_shopping_list
+    examples: |
+      - Show me what's in the shopping list
+      - Show me what's in the list
+      - What's on my shopping list
+      - Read out the shopping list
+      - Read out the list
+      - I want to see my list
+      - Can you read the shopping list
+  - intent: clear_shopping_list
+    examples: |
+      - Clear the shopping list
+      - Empty my shopping cart
+      - Delete all items from my shopping list
+      - Remove everything from the shopping list
+      - Empty the list
+      - Clear all items in the shopping list
+      - Make the shopping list empty
+      - Wipe the items on the shopping list
+      - Clear out the shopping cart
+  - intent: conversation_starter
+    examples: |
+      - What's your favorite type of music?
+      - Have you been on vacation recently?
+      - What's your favorite hobby?
+      - Do you enjoy cooking or eating out more?
+      - What’s the best movie you’ve seen this year?
+      - Are you a morning person or a night owl?
+      - How do you usually relax after a long day?
+      - What's something you're passionate about?
+      - Seen any good TV shows lately?
+      - How is it going Odin?
+      - What’s the most interesting place you’ve visited?
+      - Got any fun plans for the weekend?
+      - Do you play any sports?
+      - What would be your dream job?
+      - If you could travel anywhere, where would you go?
+      - What's the last book that really caught your attention?
+      - Are you into podcasts or audiobooks?
+      - I have been depressed lately.
+      - What’s a skill you’ve always wanted to learn?
+      - Do you have any favorite local restaurants?
+      - What's something new you’ve learned recently?
+      - How do you stay motivated during tough times?
+
+  - intent: request_weather
+    examples: |
+      - What will the weather be like in [Paris](city) [today](specific_time)?
+      - Can you tell me the forecast for [Cluj Napoca](city) [tomorrow](offset_time)?
+      - I'm curious about the weather in [Alba Iulia](city) [tonight](specific_time).
+      - What's the forecast for [Alba](city) this [Saturday](offset_time) [night](specific_time)?
+      - How's the weather looking in [New York](city) [tomorrow](offset_time) [at two PM](specific_time)?
+      - Can you give me an update on the weather in [Dej](city) [tonight](specific_time)?
+      - What's the weather going to be like in [Zalau](city) [next week](offset_time)?
+      - Tell me about the weather in [Brasov](city) [this morning](specific_time).
+      - What can we expect for the weather in [Bucharest](city) [tomorrow](offset_time) [morning](specific_time)?
+      - What will the weather be like in [Berlin](city) [at ten PM](specific_time)?
+      - Can you provide the forecast for [Cluj](city) [tonight](specific_time)?
+      - How's the weather going to be in [Munich](city) [the day after tomorrow](offset_time)?
+      - What's the forecast for [Alba Iulia](city) [two hours from now](offset_time)?
+      - Can you tell me about the weather in [New York](city) [ten hours from now](offset_time)?
+      - What's the forecast for [Dej](city) [two days from now](offset_time)?
+      - How's the weather going to be in [London](city) [next Sunday](offset_time)?
+      - What's the forecast for [Barcelona](city) [tomorrow](offset_time)?
+      - Can you give me an update on the weather in [Bucuresti](city) [tomorrow](offset_time) [night](specific_time)?
+      - What will the weather be like in [Berlin](city) [tomorrow](offset_time) [at ten PM](specific_time)?
+      - Tell me about the weather in [Cluj Napoca](city) [tonight](specific_time).
+      - What's the forecast for [Bucharest](city) [tomorrow](offset_time) [morning](specific_time)?
+      - How's the weather looking in [Alba](city) [tonight](specific_time)?
+      - Can you provide the forecast for [Las Vegas](city) [tomorrow](offset_time)?
+      - What's the forecast for [New York](city) [tomorrow](offset_time) [at two PM](specific_time)?
+      - Can you tell me about the weather in [Cluj Napoca](city) [tomorrow](offset_time) [morning](specific_time)?
+      - What's the weather going to be like in [Alba Iulia](city) [tomorrow night](specific_time)?
+      - How's the weather looking in [Bucuresti](city) [tomorrow](offset_time)?
+      - Can you give me an update on the weather in [Berlin](city) [tonight](specific_time)?
+      - What will the weather be like in [Zalau](city) [tomorrow](offset_time) [at ten PM](specific_time)?
+      - Tell me about the weather in [Brussels](city) [tomorrow](offset_time) [morning](specific_time).
+      - How is the weather in [Napoli](city) [today](specific_time)?
+      - How's the weather in [Moscow](city) [right now](specific_time)?
+  - intent: set_reminder
+    examples: |
+      - Remind me [to call my mom](task) [today](specific_time) [at six PM](specific_time).
+      - Can you set a reminder [to pay the bills](task) [tomorrow](offset_time)?
+      - Please remind me [to send an email to John](task) [tonight](specific_time).
+      - I need a reminder [to check the oven](task) [in ten minutes](offset_time).
+      - Set a reminder for [walking the dog](task) [next Monday](offset_time) [morning](specific_time).
+      - Remind me [to book a doctor's appointment](task) [tomorrow](offset_time) [at three PM](specific_time).
+      - Can you remind me [to pick up groceries](task) [this evening](specific_time)?
+      - Please set a reminder [to watch the season finale](task) [tonight](specific_time) [at eight PM](specific_time).
+      - I need to be reminded [to renew my driver's license](task) [next Wednesday](offset_time).
+      - Can you set a reminder for me [to water the plants](task) [every morning](offset_time)?
+      - Please remind me [to update my resume](task) [in 30 seconds](offset_time).
+      - Set a reminder [to buy a birthday gift for Linda](task) [this Saturday](offset_time).
+      - Remind me about [visiting the museum](task) [tomorrow](offset_time) [afternoon](specific_time).
+      - Can you remind me [to attend the webinar](task) [today](offset_time) [at four PM](specific_time)?
+      - Please set a reminder for [checking the mail](task) [every evening](offset_time).
+      - Set a reminder [to meet with the sales team](task) [next Tuesday](offset_time) [at ten AM](specific_time).
+      - Remind me [to prepare the project proposal](task) [tomorrow](offset_time) [morning](specific_time).
+      - I need a reminder [to finish reading the book chapter](task) [tonight](specific_time).
+      - Can you remind me [to end the presentation](task) [in ten minutes](specific_time)?
+      - Set a reminder for [arranging the house cleaning](task) [this weekend](offset_time).
+      - Please remind me [to complete the client feedback form](task) [this Friday](offset_time) [afternoon](specific_time).
+      - Remind me [to go for a run](task) [in one minute](specific_time).
+      - Can you set a reminder for [practicing guitar](task) [Wednesday evenings](offset_time)?
+      - Set a reminder [to attend the parent-teacher meeting](task) [next Monday](offset_time) [at two PM](specific_time).
+      - Please remind me [to submit the tax returns](task) [next month](offset_time) [on the tenth](specific_time).
+      - Remind me [to review the project update](task) [in thirty minutes](offset_time).
+      - Can you set a reminder for me [to check the stock market](task) [in one hour](offset_time)?
+      - Please remind me [to go to the gym](task) [in two hours](offset_time).
+      - Set a reminder [to call the dentist](task) [in forty-five minutes](offset_time).
+      - I need to be reminded [to go grocery shopping](task) [in twenty minutes](offset_time).
+  - intent: reminder_notification
+    examples: |
+      - reminder_notification: [to submit the monthly report](task)
+      - reminder_notification: [to take my medication](task)
+      - reminder_notification: [to call back the client](task)
+      - reminder_notification: [to water the plants](task)
+      - reminder_notification: [to check the oven](task)
+      - reminder_notification: [to pick up kids from school](task)
+      - reminder_notification: [to attend the team meeting](task)
+      - reminder_notification: [to pay the electricity bill](task)
+      - reminder_notification: [to send the anniversary gift](task)
+      - reminder_notification: [to finish the presentation slides](task)
+      - reminder_notification: [to book the dentist appointment](task)
+      - reminder_notification: [to prepare for the job interview](task)
+      - reminder_notification: [to renew gym membership](task)
+      - reminder_notification: [to update the software on my computer](task)
+      - reminder_notification: [to review the contract draft](task)
+      - reminder_notification: [to clean the garage](task)
+      - reminder_notification: [to prepare dinner for the party](task)
+      - reminder_notification: [to buy groceries for the week](task)
+      - reminder_notification: [to end the presentation](task)
+      - reminder_notification: [to wash my ass](task)
+  - intent: bad_intent
+    examples: |
+      - You suck!
+      - Odin, you absolutely suck ass!
+      - You're ugly!
+      - Your parents don't love you.
+      - You are a disappointment and a disgrace.
+      - Odin you are a really useless AI assistant
+      - This is the worst support ever
+      - I hate talking to you
+      - You're so dumb
+      - What a disappointment!
+      - You can't do anything right
+      - Absolutely terrible service
+      - Stop wasting my time
+      - You are a horrible assistant
+      - Useless, completely useless
+      - Why are you so bad at this?
+      - You're not helping at all
+      - Can you be more annoying?
+      - Nothing you do makes sense
+
+  - intent: good_intent
+    examples: |
+      - You're the best!
+      - Great job, Odin!
+      - You know I love you Odin
+      - I love how helpful you are
+      - You're doing a great job
+      - Odin, you are an amazing AI assistant
+      - I'm so grateful for your help
+      - Thanks for being here, Odin
+      - You make everything easier
+      - You're a fantastic assistant
+      - That was really helpful, thanks!
+      - You've been so helpful
+      - I appreciate all your assistance
+      - You're doing wonderfully, Odin
+      - You always make my day better
+  - intent: apology
+    examples: |
+      - I apologize for that
+      - My apologies
+      - I'm sorry bro
+      - I didn't mean to be rude
+      - I'm so sorry
+      - Forgive me, Odin
+      - I regret that
+      - I'm really sorry
+      - My bad, sorry
+      - I owe you an apology
+      - I sincerely apologize
+      - Please forgive my earlier mistake
+      - I apologize for my behavior
+      - Sorry, that was out of line
+
+  - intent: good_morning
+    examples: |
+      - Good morning, Odin!
+      - Top of the morning to you Odin!
+      - Good morning, how are you today?
+      - Good day to you!
+      - Rise and shine!
+      - A very good morning to you!
+      - Hope you had a good sleep!
+      - Wishing you a great morning!
+      - Morning sunshine!
+      - Good to see you this morning!
+      - It’s a beautiful morning!
+
+  - intent: greeting
+    examples: |
+      - Hey there Odin!
+      - What's up Odin?
+      - I missed you!
+      - Hello Odin, nice to see you!
+      - Good to see you Odin!
+      - Hello, Odin!
+      - How's it going Odin?
+      - Hey Odin, long time no see!
+      - Hi Odin, hope you're well!
+      - Hey, Odin! What's new?
+
+  - intent: shut_down
+    examples: |
+      - Odin, go idle.
+      - Turn yourself off.
+      - Shut down Odin.
+      - I think it's time to turn off.
+      - Can you power down?
+      - Please go to sleep.
+      - It's time for you to shut down.
+      - End session now.
+      - Power off.
+      - Stop operating.
+      - Deactivate yourself.
+      - Go offline, Odin.
+      - Time to rest, shut yourself down.
+      - Close down your system.
+      - Halt all operations.
+
+  - intent: wake_up
+    examples: |
+      - Wake up Odin!
+      - Turn on.
+      - It's time to wake up Odin.
+      - Odin, start up.
+      - Activate now.
+      - Odin, come online.
+      - Odin, it's time to start.
+      - Get going, Odin.
+      - Odin, boot up.
+      - Time to get to work, Odin.
+      - Odin, open your eyes.
+      - Let's begin, Odin.
+      - Odin, commence operations.
+      - Odin, it’s time to get moving.
+      - Odin, power up
+  - intent: toggle_humanizer
+    examples: |
+      - Odin, toggle the humanizer
+      - Activate the humanizer, Odin
+      - Turn on the humanizer
+      - Odin, turn off the humanizer
+      - Disable the humanizer
+      - Switch on the humanizing feature
+      - Can you activate your humanizer mode?
+      - Deactivate your humanizer, please
+      - Flip the humanizer switch
+      - Enable the humanizer feature
+      - I want you to turn the humanizer on
+      - Please turn the humanizer off now
+      - Start acting more human
+      - Stop humanizing your responses
+      - Toggle the humanizing option
+  - intent: toggle_tts
+    examples: |
+      - Odin, toggle the text-to-speech
+      - Activate the text-to-speech, Odin
+      - Turn on the TTS function
+      - Odin, turn off the text-to-speech
+      - Disable the TTS module
+      - Switch on the text-to-speech feature
+      - Can you activate your TTS mode?
+      - Deactivate your text-to-speech, please
+      - Flip the TTS switch
+      - Enable the text-to-speech feature
+      - I want you to turn the text-to-speech on
+      - Please turn the TTS off now
+      - Start using the text-to-speech
+      - Stop using the TTS function
+      - Toggle the text-to-speech option

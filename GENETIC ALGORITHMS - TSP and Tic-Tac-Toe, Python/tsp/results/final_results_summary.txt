@@ -1,0 +1,14 @@
+num_problems: 10
+ga_avg_gap: 13.082021902648766
+ga_median_gap: 13.476589788457998
+ga_min_gap: 2.2537374102344065
+ga_max_gap: 22.411787514540517
+greedy_avg_gap: 25.593346682808246
+avg_improvement: 12.511324780159478
+parameters:
+  population_size: 800
+  generations: 300
+  mutation_rate: 0.01
+  elite_size: 80
+  tournament_size: 40
+

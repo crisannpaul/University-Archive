@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Energy Dashboard</h1>
+
+    <!-- AUTH -->
+    <section class="card" id="auth-card">
+      <h2>Authentication</h2>
+
+      <div class="btn-row">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+      </div>
+
+      <div id="authStatus" class="mono" style="margin-top:.75rem;">Not logged in.</div>
+      <pre id="authInfo" class="mono auth-pre"></pre>
+    </section>
+
+    <!-- LATEST -->
+    <section class="card">
+      <h2>Latest Record</h2>
+      <pre id="latest" class="mono auth-pre">loading…</pre>
+    </section>
+
+    <!-- TABLE -->
+    <section class="card">
+      <h2>Latest Dataset (Flattened)</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Device</th>
+            <th>Timestamp</th>
+            <th>kWh</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody id="data-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <small>Cloud demo — API at <span class="mono" id="api-base"></span></small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

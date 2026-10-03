@@ -1,0 +1,112 @@
+version: "3.1"
+stories:
+  - story: Test add_to_shopping_list with entities 1
+    steps:
+      - user: |
+          Can you add [carrots]{"entity": "item"} to the basket
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+      - user: |
+          Please add [lettuce]{"entity": "item"} to my shopping cart
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+
+  - story: Test add_to_shopping_list with entities 2
+    steps:
+      - user: |
+          Put [tomatoes]{"entity": "item"} on my shopping list
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+      - user: |
+          Can you put [cucumbers]{"entity": "item"} in the basket?
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+
+  - story: Test add_to_shopping_list with entities 3
+    steps:
+      - user: |
+          Add [lettuce]{"entity": "item"} to the shopping list
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+      - user: |
+          Add [peppers]{"entity": "item"} to the shopping list please
+        intent: add_to_shopping_list
+      - action: action_add_to_shopping_list
+
+  - story: Test request_weather with entities 1
+    steps:
+      - user: |
+          How's the weather in [London]{"entity": "city"} [today]{"entity": "specific_time"}?
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+      - user: |
+          What's the weather in [Paris]{"entity": "city"} [this afternoon]{"entity": "specific_time"}?
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+
+  - story: Test request_weather with entities 2
+    steps:
+      - user: |
+          What's the weather in [Munich]{"entity": "city"} [tomorrow]{"entity": "offset_time"}?
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+      - user: |
+          How is the weather in [Berlin]{"entity": "city"} [this evening]{"entity": "specific_time"}?
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+
+  - story: Test request_weather with entities 3
+    steps:
+      - user: |
+          Tell me the weather forecast in [Barcelona]{"entity": "city"} [tonight]{"entity": "specific_time"}.
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+      - user: |
+          What will the weather be like in [Madrid]{"entity": "city"} [this weekend]{"entity": "offset_time"}?
+        intent: request_weather
+      - action: weather_form
+      - action: action_fetch_weather
+
+  - story: Test set_reminder with entities 1
+    steps:
+      - user: |
+          Remind me [to call John]{"entity": "task"} [this evening]{"entity": "specific_time"}.
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder
+      - user: |
+          Can you remind me [to send an email]{"entity": "task"} [tomorrow morning]{"entity": "specific_time"}?
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder
+
+  - story: Test set_reminder with entities 2
+    steps:
+      - user: |
+          Set a reminder [to take out the trash]{"entity": "task"} [in an hour]{"entity": "offset_time"}.
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder
+      - user: |
+          Please remind me [to water the plants]{"entity": "task"} [every morning]{"entity": "offset_time"}
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder
+
+  - story: Test set_reminder with entities 3
+    steps:
+      - user: |
+          I need a reminder [to finish my report]{"entity": "task"} [tomorrow]{"entity": "offset_time"}.
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder
+      - user: |
+          Set a reminder [to call mom]{"entity": "task"} [in an hour]{"entity": "offset_time"}
+        intent: set_reminder
+      - action: reminder_form
+      - action: action_set_reminder

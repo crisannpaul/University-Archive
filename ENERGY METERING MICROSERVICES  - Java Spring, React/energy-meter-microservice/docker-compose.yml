@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  device-db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'energy_meters_db'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - "3308:3306"
+    volumes:
+      - my-db:/var/lib/mysql
+    networks:
+      demo_net:
+        ipv4_address: 172.30.1.3
+  device-microservice:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - "8078:8081"
+    environment:
+      - DB_IP=device-db
+      - DB_PORT=3306
+      - DB_DBNAME=energy_meters_db
+      - DB_USER=root
+      - DB_PASSWORD=root
+    networks:
+      demo_net:
+        ipv4_address: 172.30.1.2
+
+volumes:
+  my-db:
+
+networks:
+  demo_net:
+    external: true

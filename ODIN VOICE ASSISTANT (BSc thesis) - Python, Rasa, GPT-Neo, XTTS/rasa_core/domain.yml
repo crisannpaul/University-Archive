@@ -1,0 +1,150 @@
+version: "3.1"
+
+intents:
+  - bot_challenge
+  - add_to_shopping_list
+  - read_shopping_list
+  - clear_shopping_list
+  - conversation_starter
+  - set_reminder
+  - reminder_notification
+  - request_weather
+  - bad_intent
+  - good_intent
+  - apology
+  - good_morning
+  - greeting
+  - shut_down
+  - wake_up
+  - toggle_humanizer
+  - toggle_tts
+
+slots:
+  shopping_list:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: city
+  task:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: task
+  specific_time:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: specific_time
+  offset_time:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: offset_time
+  mood:
+    type: float
+    mappings:
+      - type: custom
+    initial_value: 0
+    influence_conversation: false
+    min_value: -1
+    max_value: 1
+  rephrase:
+    type: bool
+    mappings:
+      - type: custom
+    initial_value: false
+    influence_conversation: false
+
+
+forms:
+  weather_form:
+    ignored_intents: 
+      - affirm
+      - deny
+      - conversation_starter
+    required_slots:
+      - city
+      - specific_time
+      - offset_time
+  reminder_form:
+    ignored_intents: 
+      - affirm
+      - deny
+      - conversation_starter
+    required_slots:
+      - task
+      - specific_time
+      - offset_time
+  
+entities:
+  - city
+  - task
+  - specific_time
+  - offset_time
+  - item
+
+responses:
+
+#  utter_greet:
+#    - text: "Hey there!"
+
+  utter_happy:
+    - text: "Hey there!"
+
+  utter_cheer_up:
+    - text: "Hey there!"
+
+  utter_did_that_help:
+    - text: "Hey there!"
+
+  utter_goodbye:
+    - text: "Hey there!"
+
+  utter_ask_city:
+    - text: "Which city are you interested in?"
+    
+  utter_ask_offset_time:
+    - text: "Do you have a specific time in mind?"
+
+  utter_ask_specific_time:
+    - text: "Do you have a specific time in mind?"
+
+  utter_ask_task:
+    - text: "What would you like me to remind you?"
+
+  utter_ask_item:
+    - text: "What would you like me to add on the shopping list?"
+
+  utter_submit:
+    - text: "Fetching weather in: {city}, time: {time}"
+
+actions:
+  - action_handle_challenge
+  - action_add_to_shopping_list
+  - action_read_shopping_list
+  - action_clear_shopping_list
+  - action_generate_dialogue_response
+  - validate_weather_form
+  - validate_reminder_form
+  - action_fetch_weather
+  - action_set_reminder
+  - action_reminder_response
+#  - action_fallback
+  - action_handle_bad_intent
+  - action_handle_good_intent
+  - action_handle_apology
+  - action_handle_good_morning
+  - action_handle_greeting
+  - action_handle_shut_down
+  - action_handle_wake_up
+  - action_toggle_humanizer
+  - action_toggle_tts
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

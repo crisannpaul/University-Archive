@@ -1,0 +1,70 @@
+<mxfile host="Electron" modified="2024-07-11T11:04:56.257Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="tUnbAIo-HA4IfSekjPoT" version="24.6.1" type="device">
+  <diagram name="Page-1" id="eeqaRz8lsjjxrmaLvJQR">
+    <mxGraphModel dx="1644" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fxj9KmIYnjri92nlanQx-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" parent="1" source="fxj9KmIYnjri92nlanQx-1" target="fxj9KmIYnjri92nlanQx-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-1" value="Whitespace&amp;nbsp; Tokenizer" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="80" y="475" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fxj9KmIYnjri92nlanQx-2" target="fxj9KmIYnjri92nlanQx-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-2" value="Featurizers" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="240" y="400" width="130" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-3" value="Regex Featurizer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="430" width="107.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-4" value="Lexical Syntactic Featurizer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="480" width="107.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-5" value="Count Vectors Featurizer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="535" width="107.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fxj9KmIYnjri92nlanQx-7" target="fxj9KmIYnjri92nlanQx-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-7" value="DIET Classifier" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="410" y="475" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fxj9KmIYnjri92nlanQx-10" target="fxj9KmIYnjri92nlanQx-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-10" value="Entity Synonym Mapper&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="570" y="475" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-16" value="Predict" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="fxj9KmIYnjri92nlanQx-11" target="pgqilu3nKefKzJYpKNOO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-17" value="Update" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="fxj9KmIYnjri92nlanQx-11" target="pgqilu3nKefKzJYpKNOO-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-11" value="Selectors" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="730" y="427.5" width="130" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-12" value="Response Selector" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="742.5" y="457.5" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fxj9KmIYnjri92nlanQx-13" value="Fallback Classifier" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="742.5" y="507.5" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-8" value="Action" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="910" y="419" width="80" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pgqilu3nKefKzJYpKNOO-9" target="fxj9KmIYnjri92nlanQx-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-9" value="Natural Language" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="464" width="80" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="pgqilu3nKefKzJYpKNOO-13" value="Tracker" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="910" y="524" width="80" height="62" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

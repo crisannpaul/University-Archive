@@ -1,0 +1,52 @@
+
+.background-container-requests {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assetes/donationRequests.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+  }
+
+
+.donation-requests-container {
+    position: absolute;
+    background-color: #ffffff;
+    width: 20%;
+    top: 26%;
+    left: 13%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+.donation-requests-container h2 {
+    text-align: center;
+}
+
+.donation-requests-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.donation-requests-container ul li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(255, 205, 205);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.donation-requests-container ul li div {
+    margin-bottom: 5px;
+}
+
+.donation-requests-container ul li div strong {
+    font-weight: bold;
+}

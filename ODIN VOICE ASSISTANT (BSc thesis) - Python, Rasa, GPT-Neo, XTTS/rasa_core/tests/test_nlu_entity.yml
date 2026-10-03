@@ -1,0 +1,49 @@
+nlu:
+  - intent: add_to_shopping_list
+    examples: |
+      - Add [lettuce](item) to the shopping list
+      - Put [tomatoes](item) on my shopping list
+      - Can you add [carrots](item) to the basket
+      - Please put [orange juice](item) in the list
+      - Add [cereal](item) to the basket
+      - Can you add [pasta](item) to my shopping list?
+      - Put [juice](item) on the list
+      - Add [bread](item) to the shopping list
+      - Please add [butter](item) to the shopping list
+      - Put [apples](item) on the shopping list
+  - intent: request_weather
+    examples: |
+      - How's the weather in [London](city) [today](specific_time)?
+      - What's the forecast for [Munich](city) [tomorrow](offset_time)?
+      - Tell me the weather in [Barcelona](city) [tonight](specific_time).
+      - Can you tell me the weather in [Rome](city) [this weekend](offset_time)?
+      - What's the weather like in [Vienna](city) [next week](offset_time)?
+      - How is the weather in [Sydney](city) [tomorrow](offset_time)?
+      - What's the weather forecast for [Tokyo](city) [next week](offset_time)?
+      - Tell me the weather in [New York](city) [this weekend](offset_time)
+      - Can you give me the weather update for [Dubai](city) [tonight](specific_time)?
+      - What's the temperature in [San Francisco](city) [today](specific_time)?
+  - intent: set_reminder
+    examples: |
+      - Remind me [to call John](task) [this evening](specific_time).
+      - Set a reminder [to take out the trash](task) [in an hour](offset_time).
+      - I need a reminder [to finish my report](task) [tomorrow](offset_time).
+      - Please remind me [to water the plants](task) [every morning](offset_time).
+      - Set a reminder [to attend the meeting](task) [next Monday](offset_time).
+      - Set a reminder [to call mom](task) [in 30 minutes](offset_time)
+      - Remind me [to do the laundry](task) [tomorrow](offset_time)
+      - I need to be reminded [to buy groceries](task) [in an hour](offset_time)
+      - Please set a reminder [to take medicine](task) [every day](offset_time)
+      - Remind me [to attend the conference](task) [next week](offset_time)
+  - intent: reminder_notification
+    examples: |
+      - reminder_notification: [to check the mailbox](task)
+      - reminder_notification: [to finish the assignment](task)
+      - reminder_notification: [to make a phone call](task)
+      - reminder_notification: [to schedule a meeting](task)
+      - reminder_notification: [to feed the cat](task)
+      - reminder_notification: [to water the plants](task)
+      - reminder_notification: [to feed the dog](task)
+      - reminder_notification: [to call the doctor](task)
+      - reminder_notification: [to go for a run](task)
+      - reminder_notification: [to finish the project](task)
