@@ -1,0 +1,290 @@
+[
+  {
+    "text": "Can you add carrots to the basket",
+    "entities": [
+      {
+        "start": 12,
+        "end": 19,
+        "value": "carrots",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Please add lettuce to my shopping cart",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "lettuce",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Put tomatoes on my shopping list",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "tomatoes",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you put cucumbers in the basket?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "cucumbers",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Add lettuce to the shopping list",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "lettuce",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Add peppers to the shopping list please",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "peppers",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How's the weather in London today?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "London",
+        "entity": "city"
+      },
+      {
+        "start": 28,
+        "end": 33,
+        "value": "today",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's the weather in Paris this afternoon?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "Paris",
+        "entity": "city"
+      },
+      {
+        "start": 28,
+        "end": 42,
+        "value": "this afternoon",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's the weather in Munich tomorrow?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "Munich",
+        "entity": "city"
+      },
+      {
+        "start": 29,
+        "end": 37,
+        "value": "tomorrow",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How is the weather in Berlin this evening?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "Berlin",
+        "entity": "city"
+      },
+      {
+        "start": 29,
+        "end": 41,
+        "value": "this evening",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me the weather forecast in Barcelona tonight.",
+    "entities": [
+      {
+        "start": 32,
+        "end": 41,
+        "value": "Barcelona",
+        "entity": "city"
+      },
+      {
+        "start": 42,
+        "end": 49,
+        "value": "tonight",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What will the weather be like in Madrid this weekend?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 39,
+        "value": "Madrid",
+        "entity": "city"
+      },
+      {
+        "start": 40,
+        "end": 52,
+        "value": "this weekend",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Remind me to call John this evening.",
+    "entities": [
+      {
+        "start": 10,
+        "end": 22,
+        "value": "to call John",
+        "entity": "task"
+      },
+      {
+        "start": 23,
+        "end": 35,
+        "value": "this evening",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you remind me to send an email tomorrow morning?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 34,
+        "value": "to send an email",
+        "entity": "task"
+      },
+      {
+        "start": 35,
+        "end": 51,
+        "value": "tomorrow morning",
+        "entity": "specific_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Set a reminder to take out the trash in an hour.",
+    "entities": [
+      {
+        "start": 15,
+        "end": 36,
+        "value": "to take out the trash",
+        "entity": "task"
+      },
+      {
+        "start": 37,
+        "end": 47,
+        "value": "in an hour",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Please remind me to water the plants every morning",
+    "entities": [
+      {
+        "start": 17,
+        "end": 36,
+        "value": "to water the plants",
+        "entity": "task"
+      },
+      {
+        "start": 37,
+        "end": 50,
+        "value": "every morning",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need a reminder to finish my report tomorrow.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 37,
+        "value": "to finish my report",
+        "entity": "task"
+      },
+      {
+        "start": 38,
+        "end": 46,
+        "value": "tomorrow",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Set a reminder to call mom in an hour",
+    "entities": [
+      {
+        "start": 15,
+        "end": 26,
+        "value": "to call mom",
+        "entity": "task"
+      },
+      {
+        "start": 27,
+        "end": 37,
+        "value": "in an hour",
+        "entity": "offset_time"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

@@ -1,0 +1,128 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: request_weather
+  examples: |
+    - What will the weather be like in [Paris](city) [today](specific_time)?
+    - Can you tell me the forecast for [Cluj Napoca](city) [tomorrow](offset_time)?
+    - I'm curious about the weather in [Alba Iulia](city) [tonight](specific_time).
+    - What's the forecast for [Alba](city) this [Saturday](offset_time) [night](specific_time)?
+    - How's the weather looking in [New York](city) [tomorrow](offset_time) [at two PM](specific_time)?
+    - Can you give me an update on the weather in [Dej](city) [tonight](specific_time)?
+    - What's the weather going to be like in [Zalau](city) [next week](offset_time)?
+    - Tell me about the weather in [Brasov](city) [this morning](specific_time).
+    - What can we expect for the weather in [Bucharest](city) [tomorrow](offset_time) [morning](specific_time)?
+    - What will the weather be like in [Berlin](city) [at ten PM](specific_time)?
+    - Can you provide the forecast for [Cluj](city) [tonight](specific_time)?
+    - How's the weather going to be in [Paris](city) [the day after tomorrow](offset_time)?
+    - What's the forecast for [Alba Iulia](city) [two hours from now](offset_time)?
+    - Can you tell me about the weather in [New York](city) [ten hours from now](offset_time)?
+    - What's the forecast for [Dej](city) [two days from now](offset_time)?
+    - How's the weather going to be in [Zalau](city) [next Sunday](offset_time)?
+    - What's the forecast for [Brasov](city) [tomorrow](offset_time)?
+    - Can you give me an update on the weather in [Bucuresti](city) [tomorrow](offset_time) [night](specific_time)?
+    - What will the weather be like in [Berlin](city) [tomorrow](offset_time) [at ten PM](specific_time)?
+    - Tell me about the weather in [Cluj Napoca](city) [tonight](specific_time).
+    - What's the forecast for [Bucharest](city) [tomorrow](offset_time) [morning](specific_time)?
+    - How's the weather looking in [Alba](city) [tonight](specific_time)?
+    - Can you provide the forecast for [Paris](city) [tomorrow](offset_time)?
+    - What's the forecast for [New York](city) [tomorrow](offset_time) [at two PM](specific_time)?
+    - Can you tell me about the weather in [Cluj Napoca](city) [tomorrow](offset_time) [morning](specific_time)?
+    - What's the weather going to be like in [Alba Iulia](city) [tomorrow night](specific_time)?
+    - How's the weather looking in [Bucuresti](city) [tomorrow](offset_time)?
+    - Can you give me an update on the weather in [Berlin](city) [tonight](specific_time)?
+    - What will the weather be like in [Zalau](city) [tomorrow](offset_time) [at ten PM](specific_time)?
+    - Tell me about the weather in [Brasov](city) [tomorrow](offset_time) [morning](specific_time).
+    - How is the weather in [Cluj](city) [today](specific_time)?
+    - How's the weather in [Alba](city) [right now](specific_time)?
+
+

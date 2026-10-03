@@ -1,0 +1,4 @@
+#ifndef SDA_UTIL_TESTHASHTABLE_H
+#define SDA_UTIL_TESTHASHTABLE_H
+void test_hashTable();
+#endif //SDA_UTIL_TESTHASHTABLE_H

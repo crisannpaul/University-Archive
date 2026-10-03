@@ -1,0 +1,66 @@
+# IDE / OS
+.idea/
+.vs/
+.vscode/
+.settings/
+*.iml
+*.suo
+*.user
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Java / Maven / Gradle
+target/
+build/
+bin/
+.gradle/
+*.class
+*.war
+maven-wrapper.jar
+
+# Node / Elm
+node_modules/
+elm-stuff/
+dist/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+*.pt
+*.pth
+
+# C / C++ / Visual Studio / CMake
+x64/
+Debug/
+Release/
+cmake-build-debug/
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+
+# Vivado / Xilinx
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.jou
+*.log
+*_bsp/
+webtalk/
+
+# Archives and secrets
+*.zip
+*.7z
+*.rar
+.env

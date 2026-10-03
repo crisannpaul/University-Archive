@@ -1,0 +1,58 @@
+.recommend-inspection-container {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommend-inspection-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  .recommend-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .recommend-form label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input {
+    width: 90%; /* Adjusted width */
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea.input {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  

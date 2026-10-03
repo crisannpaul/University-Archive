@@ -1,0 +1,47 @@
+<mxfile host="Electron" modified="2024-07-12T11:46:22.429Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="GSO-K5nDJc-YMFzvD1RU" version="24.6.1" type="device">
+  <diagram name="Page-1" id="cW4jXnpg5MaW1laU-t-G">
+    <mxGraphModel dx="794" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ylq_IbpEgELsKSUruUTH-1" value="”Remind me to&amp;nbsp;&lt;div&gt;go to the gym&amp;nbsp;&lt;div&gt;in 30 minutes”&lt;/div&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="xNdCfJTfQs7R9qG8ghBb-1" target="xNdCfJTfQs7R9qG8ghBb-9">
+          <mxGeometry y="30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-9" value="Rasa Core" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="370" y="260" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-11" value="ActionReminderNotification" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="285" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-16" value="- task: ”go to the gym”&lt;div&gt;-time: now + delta(minutes=30)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="xNdCfJTfQs7R9qG8ghBb-12" target="xNdCfJTfQs7R9qG8ghBb-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-12" value="ActionSetReminder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="285" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-17" value="- task: ”go to the gym”" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="xNdCfJTfQs7R9qG8ghBb-14" target="xNdCfJTfQs7R9qG8ghBb-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-14" value="Reminder Service" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="490" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xNdCfJTfQs7R9qG8ghBb-15" value="Scheduler" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

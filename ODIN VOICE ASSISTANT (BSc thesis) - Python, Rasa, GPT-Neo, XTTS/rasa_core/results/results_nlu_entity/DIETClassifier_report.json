@@ -1,0 +1,58 @@
+{
+  "city": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 12,
+    "confused_with": {}
+  },
+  "task": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 79,
+    "confused_with": {}
+  },
+  "offset_time": {
+    "precision": 1.0,
+    "recall": 0.8275862068965517,
+    "f1-score": 0.9056603773584906,
+    "support": 29,
+    "confused_with": {
+      "specific_time": 1
+    }
+  },
+  "item": {
+    "precision": 1.0,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.9523809523809523,
+    "support": 11,
+    "confused_with": {}
+  },
+  "specific_time": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 6,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9920634920634921,
+    "recall": 0.9124087591240876,
+    "f1-score": 0.9505703422053231,
+    "support": 137
+  },
+  "macro avg": {
+    "precision": 0.9714285714285713,
+    "recall": 0.8473354231974921,
+    "f1-score": 0.8895569838966066,
+    "support": 137
+  },
+  "weighted avg": {
+    "precision": 0.9937434827945777,
+    "recall": 0.9124087591240876,
+    "f1-score": 0.9436408975040019,
+    "support": 137
+  },
+  "accuracy": 0.9581881533101045
+}

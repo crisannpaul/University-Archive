@@ -1,0 +1,90 @@
+[
+  {
+    "text": "is anyone there?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "conversation_starter",
+      "confidence": 0.6402182579040527
+    }
+  },
+  {
+    "text": "am I speaking to a machine?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.4252726137638092
+    }
+  },
+  {
+    "text": "Do you like reading books?",
+    "intent": "conversation_starter",
+    "intent_prediction": {
+      "name": "read_shopping_list",
+      "confidence": 0.21056151390075684
+    }
+  },
+  {
+    "text": "You are awful!",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "good_intent",
+      "confidence": 0.29743340611457825
+    }
+  },
+  {
+    "text": "I dislike you!",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "good_morning",
+      "confidence": 0.20518989861011505
+    }
+  },
+  {
+    "text": "You're the worst assistant!",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "good_intent",
+      "confidence": 0.5497801899909973
+    }
+  },
+  {
+    "text": "I can't stand you!",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "good_intent",
+      "confidence": 0.25577735900878906
+    }
+  },
+  {
+    "text": "I don't like you",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7855360507965088
+    }
+  },
+  {
+    "text": "You're not helpful at all",
+    "intent": "bad_intent",
+    "intent_prediction": {
+      "name": "good_intent",
+      "confidence": 0.9644111394882202
+    }
+  },
+  {
+    "text": "You are amazing!",
+    "intent": "good_intent",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6957605481147766
+    }
+  },
+  {
+    "text": "You're very good at this",
+    "intent": "good_intent",
+    "intent_prediction": {
+      "name": "bad_intent",
+      "confidence": 0.5317367911338806
+    }
+  }
+]

@@ -1,0 +1,69 @@
+.dashboard {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    text-align: center;
+    background-color: #736b6b00;
+    width: 100%;
+    height: 86vh;
+    overflow-y: auto;
+    z-index: 1; /* Set a higher z-index value */
+}
+
+.background-dash-admin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assetes/userDashboard.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Element container styling */
+.element {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.element h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.element p {
+    font-size: 1em;
+    color: #555;
+}

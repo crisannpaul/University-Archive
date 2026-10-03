@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Library</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+<header id="topbar">
+  <div class="brand">
+    Smart Library <span class="brand-tag">v2</span>
+    <button id="btn-change-library" class="link-btn" title="Open a different library folder">change…</button>
+  </div>
+  <div id="status-strip">
+    <span id="status-total">— clips</span>
+    <span id="status-windows">— windows</span>
+    <span id="status-clusters">— clusters</span>
+    <span id="status-faced">— faced</span>
+    <span id="status-captioned">— captioned</span>
+    <span id="status-errors" class="errors-link">— errors</span>
+  </div>
+</header>
+
+<!-- First-time setup (also re-shown when localStorage path is missing/invalid) -->
+<section id="setup-panel">
+  <h2>Open a Smart Library</h2>
+  <p class="muted">Type or paste the absolute path of the folder you want to open.
+    A <code>.smart-library</code> marker file identifies it as a library; if missing,
+    you'll be offered to initialize it.</p>
+  <div class="row">
+    <input id="path-input" type="text" placeholder="C:\Users\you\Smart Library" autocomplete="off" />
+    <button id="btn-open">Open</button>
+  </div>
+  <div id="setup-status" class="status-line"></div>
+  <div id="init-prompt" class="hidden">
+    <p>This folder is not yet a Smart Library.
+      Create the marker file and a <code>People/</code> folder?</p>
+    <button id="btn-init">Initialize library</button>
+    <button id="btn-init-cancel" class="secondary">Cancel</button>
+  </div>
+</section>
+
+<main id="main" class="hidden">
+  <aside id="left-pane">
+    <h3>Operations</h3>
+    <div class="op-controls">
+      <label>Scope:
+        <select id="scope-select">
+          <option value="library">Whole library</option>
+          <option value="folder">Folder…</option>
+          <option value="clip">Single clip…</option>
+        </select>
+      </label>
+      <input id="scope-target" type="text" placeholder="(relative path)" class="hidden" />
+      <label class="check"><input type="checkbox" id="opt-force"/> Force</label>
+      <label class="check"><input type="checkbox" id="opt-dry"/> Dry-run</label>
+      <label class="check"><input type="checkbox" id="opt-retry"/> Retry errors</label>
+    </div>
+    <div class="op-buttons">
+      <button data-op="normalize">Normalize</button>
+      <button data-op="face">Face scan</button>
+      <button data-op="rematch">Rematch faces</button>
+      <button data-op="caption">Indexing (caption)</button>
+      <button data-op="apply-names">Apply display names</button>
+      <button data-op="sync">Sync</button>
+      <button data-op="cluster">Cluster</button>
+      <button data-op="run-all" class="primary">Run all</button>
+    </div>
+
+    <h3>Live log</h3>
+    <pre id="log"></pre>
+  </aside>
+
+  <section id="center-pane">
+    <div class="search-row">
+      <input id="query-input" type="text" placeholder="Semantic query — e.g. 'paul cheers glass'" />
+      <button id="btn-query">Search</button>
+      <button id="btn-clear-query" class="secondary">Clear</button>
+    </div>
+    <div id="people-filter" class="hidden">
+      <span class="muted">Filter by person:</span>
+      <div id="people-chips"></div>
+    </div>
+    <div id="tag-filter" class="hidden">
+      <span class="muted">Filter by tag:</span>
+      <div id="tag-chips"></div>
+    </div>
+    <div id="active-cluster" class="hidden">
+      <span class="muted">Cluster filter:</span>
+      <span id="active-cluster-name"></span>
+      <button id="btn-clear-cluster" class="link-btn">clear ×</button>
+    </div>
+    <div class="browser-controls">
+      <label>View:
+        <select id="view-mode">
+          <option value="chronological">Chronological</option>
+          <option value="tree">Tree (by location)</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="group-by-clip"/> Group windows by clip</label>
+      <label class="check"><input type="checkbox" id="show-hidden"/> Show hidden</label>
+      <label class="check"><input type="checkbox" id="favorites-only"/> ★ Favorites only</label>
+      <span id="result-count" class="muted"></span>
+    </div>
+    <datalist id="tag-vocab"></datalist>
+    <div id="clip-grid"></div>
+  </section>
+
+  <aside id="right-pane">
+    <div class="right-tabs">
+      <button class="tab-btn active" data-tab="clusters">Clusters</button>
+      <button class="tab-btn" data-tab="detail">Window details</button>
+    </div>
+    <div id="tab-clusters" class="tab-pane">
+      <div id="cluster-list" class="muted">Run Cluster (or Run all) to populate.</div>
+    </div>
+    <div id="tab-detail" class="tab-pane hidden">
+      <div id="window-detail" class="muted">Click a window to see its details.</div>
+    </div>
+  </aside>
+</main>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

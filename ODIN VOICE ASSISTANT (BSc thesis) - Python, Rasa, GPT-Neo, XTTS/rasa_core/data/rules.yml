@@ -1,0 +1,118 @@
+version: "3.1"
+
+rules:
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: action_handle_challenge
+
+- rule: Add item to shopping list
+  steps:
+  - intent: add_to_shopping_list
+#    entities:
+#    - item: "milk"
+  - action: action_add_to_shopping_list
+
+- rule: Read shopping list
+  steps:
+  - intent: read_shopping_list
+  - action: action_read_shopping_list
+
+- rule: Clear shopping list
+  steps:
+  - intent: clear_shopping_list
+  - action: action_clear_shopping_list
+
+- rule: Dialogue
+  steps:
+  - intent: conversation_starter
+  - action: action_generate_dialogue_response
+
+- rule: Fallback
+  steps: 
+  - intent: nlu_fallback
+  - action: action_generate_dialogue_response
+
+- rule: Activate weather form
+  steps:
+  - intent: request_weather
+  - action: weather_form
+  - active_loop: weather_form
+
+- rule: Submit weather form
+  condition:
+    - active_loop: weather_form
+  steps:
+    - action: weather_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_fetch_weather
+
+- rule: Activate reminder form
+  steps:
+  - intent: set_reminder
+  - action: reminder_form
+  - active_loop: reminder_form
+
+- rule: Respond to reminder notification
+  steps:
+  - intent: reminder_notification
+  - action: action_reminder_response
+
+- rule: Submit reminder form
+  condition:
+    - active_loop: reminder_form
+  steps:
+    - action: reminder_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_set_reminder
+
+- rule: Handle bad intent
+  steps:
+  - intent: bad_intent
+  - action: action_handle_bad_intent
+
+- rule: Handle good intent
+  steps:
+  - intent: good_intent
+  - action: action_handle_good_intent
+
+- rule: Handle apology
+  steps:
+  - intent: apology
+  - action: action_handle_apology
+
+- rule: Respond to good morning greeting
+  steps:
+  - intent: good_morning
+  - action: action_handle_good_morning
+
+- rule: Handle greeting
+  steps:
+  - intent: greeting
+  - action: action_handle_greeting
+
+- rule: Handle shut-down command
+  steps:
+  - intent: shut_down
+  - action: action_handle_shut_down
+
+- rule: Handle wake-up command
+  steps:
+  - intent: wake_up
+  - action: action_handle_wake_up
+
+- rule: Toggle humanizer feature
+  steps:
+  - intent: toggle_humanizer
+  - action: action_toggle_humanizer
+
+- rule: Toggle tts feature
+  steps:
+  - intent: toggle_tts
+  - action: action_toggle_tts
+

@@ -1,0 +1,20 @@
+%[add_to_shopping_list]('training': '15')
+    Add [~[item]](item) to the ~[list]
+    Put [~[item]](item) on my ~[list]
+    I need to buy [~[item]](item)
+    Can you add [~[item]](item) to ~[list]
+    Please put [~[item]](item) in the ~[list]
+
+~[item]
+    milk
+    bread
+    eggs
+    cheese
+    apples
+    bananas
+    chicken
+
+~[list]
+    shopping list
+    basket
+    list

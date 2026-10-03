@@ -1,0 +1,37 @@
+Type R:
+[opcode - 3][rs - 3][rt - 3][rd - 3][sa - 1][func - 3]
+
+-add: 0000010111000000
+add $rd, $rs, $rt | RF[rd] <- RF[rs] + RF[rt]
+
+-sub: 0000010111000001
+sub $rd, $rs, $rt | RF[rd] <- RF[rs] - RF[rt]
+
+-sll: 0000110111000010
+sll $rd, $rs | RF[rd] <- RF[rs] << sa
+
+-srl: 0000010111000011
+srl $rd, $rs | RF[rd] <- RF[rs] >> sa
+
+-and: 0000010111000100
+and $rd, $rs, $rt | RF[rd] <- RF[rs] && RF[rt]
+
+-or: 0000010111000101
+or $rd, $rs, $rt | RF[rd] <- RF[rs] || RF[rt]
+
+
+Type I:
+[opcode - 3][rs - 3][rt - 3][addr/imm - 7]
+
+-addi: 0011001010001000
+addi $rs, $rt, imm | RF[rt] <- RF[rs] + s_ext(imm)
+
+-lw: 0011001010001001
+lw $rt, imm($rs) | RF[rt] <- MEM[RF[rs] + s_ext(imm)]
+
+-sw: 0011001010001010
+sw $rt, imm($rs) |  MEM[RF[rs] + s_ext(imm)] <- RF[rt]
+
+
+
+

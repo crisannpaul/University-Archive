@@ -1,0 +1,41 @@
+{
+  "ENGLISH": {
+    "LOGIN": "LOGIN",
+    "REGISTER": "REGISTER",
+    "GUEST": "Play as guest",
+    "PLAY": "PLAY",
+    "USERNAME": "Username:",
+    "SCORE": "Score",
+    "EMAIL": "Email:",
+    "PASSWORD": "Password:",
+    "BACK": "< Back",
+    "EXECUTE": "Execute",
+    "REGISTERED USERS": "Registered users:"
+  },
+  "SPANISH": {
+    "LOGIN": "ACCESO",
+    "REGISTER": "REGISTRO",
+    "GUEST": "Jugar como invitado",
+    "PLAY": "JUGAR",
+    "USERNAME": "Nombre:",
+    "SCORE": "Puntaje",
+    "EMAIL": "Email:",
+    "PASSWORD": "Contrasea:",
+    "BACK": "< Regresa",
+    "EXECUTE": "Ejecutar",
+    "REGISTERED USERS": "Usuarios registrados:"
+  },
+  "RUSSIAN": {
+    "LOGIN": "AVTORIZOVAT",
+    "REGISTER": "REGISTR",
+    "GUEST": "Igrat' v kachestve gostya",
+    "PLAY": "IGRAT",
+    "USERNAME": "Imya:",
+    "SCORE": "Schet",
+    "EMAIL": "Elektronnaya pochta:",
+    "PASSWORD": "Parol:",
+    "BACK": "< Nazad",
+    "EXECUTE": "Vypolnyat",
+    "REGISTERED USERS": "Zaregistrirovannyye pol'zovateli:"
+  }
+}
