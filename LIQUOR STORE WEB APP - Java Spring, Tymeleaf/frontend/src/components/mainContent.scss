@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  $roboto:'Roboto';
+  $cursive_font:'Satisfy';
+  $round:'Varela Round';
+  $cta:#fe8033;
+  $bg:#272b34;
+  $light_bg:#2b3039;
+  $text:#2d343e;
+  $white:#fff;
+
+.main_content{
+    @extend .dFlex;
+    position:relative;
+    width:70%;
+    height:100%;
+    margin:50px auto;
+    padding:50px 0 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h3{
+      position:absolute;
+      left:0;
+      top:0;
+      color:$text;
+      font-size:10.5vw;       
+    }
+    .card{
+      width:30%;
+      border-radius: 15px;
+      @extend .dFlex;
+      flex-direction: column;
+      position:relative;
+      transform:scale(.8);
+      transition:all .3s ease-in-out;
+      margin-bottom:50px;
+      .card_img{
+        margin-top:-5vw;
+        img{
+          width:200px;
+        }
+      }
+      .card_header{
+        @extend .dFlex;
+        flex-direction: column;
+        color:$white;
+        margin:25px 0;
+        h2{
+          font-size:18px;
+        }
+        p{
+          font-size:14px;
+          text-align: center;
+          color:rgba($white, .3);
+          margin:8px 0;
+        }
+        .price{
+          font-size:25px;
+          color:$cta;
+          span{
+            font-size:15px;
+            display:inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .card:hover{
+      background-color:$light_bg;
+      transform: scale(1.1);
+      cursor:pointer;
+    }
+    .card:hover{
+     .btn{
+       background-color:$cta;
+       color:$white;
+     }      
+   }
+}

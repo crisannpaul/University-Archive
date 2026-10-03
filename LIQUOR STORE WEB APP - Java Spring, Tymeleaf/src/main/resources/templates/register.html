@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+<body>
+<th:block th:include="/_header"></th:block>
+<th:block th:include="/_menu"></th:block>
+
+<div class="page-title">Register</div>
+
+<div class="register-container">
+    <h3>Enter username and password</h3>
+    <br>
+
+    <form th:object="${accountForm}" th:action="@{/admin/register}" method="POST">
+        <table>
+            <tr>
+                <td>User Name *</td>
+                <td><input th:field="*{userName}"/></td>
+                <td>
+                    <span class="error-message" th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}">..</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password *</td>
+                <td><input type="password" name="password" th:field="*{password}" /></td>
+            </tr>
+            <tr>
+                <td>Repeat Password *</td>
+                <td><input type="password" name="repeatPassword" th:field="*{repeatPassword}" /></td>
+                <p th:each="error : ${#fields.errors('password')}"
+                   th:text="${error}">Validation error</p>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Register" />
+                    <input type="reset"  value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <span class="error-message" th:utext="${error}"></span>
+</div>
+
+<th:block th:include="/_footer"></th:block>
+
+</body>
+</html>
